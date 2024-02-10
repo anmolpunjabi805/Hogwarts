@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Admision</title>
+        <link href="style.css" rel="stylesheet"/>
+    </head>
+    <body style="background-color: aquamarine;">
+        <h1>Howarts School of Witchcraft and Wizardry</h1>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="./Index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./courses.html">Courses</a></li>
+                    <li><a href="./faculty.html">Faculty</a></li>
+                    <li><a href="./gallery.html">Photo Gallery</a></li>
+                    <li><a href="./adm.html">Admision</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="head">
+            <h2>Admision form</h2>
+        </section>
+        <section class="formdets">
+            <form target="_self">
+                <div>
+                    <label for="Name" class="formlabel">
+                        Name of the candidate;
+                    </label>
+                    <input type="text" id="Name" class="formtext" style="width: 40%;" required maxlength="20" autofocus/>*
+                </div> 
+                <div>
+                    <!--This div is for username-->
+                    <label for="Uname" class="formlabel">
+                        User Name;
+                    </label>
+                    <input type="email" id="Uname" class="formtext" style="margin-left: 10%; width: 40%;" placeholder="xyz@gmail.com" />
+                </div>
+                <div>
+                    <!--This div is for username-->
+                    <label for="Pwd" class="formlabel">
+                        Password;
+                    </label>
+                    <input type="password" id="Pwd" class="formtext" style="margin-left: 11%; width: 40%;" />
+                </div> 
+                <div>
+                    <!--This div is for username-->
+                    <label for="age" class="formlabel">
+                        Age
+                    </label>
+                    <input type="number" id="age" class="formtext" style="margin-left: 11%; width: 40%;" min="6" max="17" />
+                </div> 
+                <div>
+                    <!--This div is for username-->
+                    <label for="dob" class="formlabel">
+                        Date of birth;
+                    </label>
+                    <input type="date" id="dob" class="formtext" style="margin-left: 8%; width: 40%;"/>
+                </div> 
+                <div>
+                    <!--This div is for username-->
+                    <label for="pob" class="formlabel">
+                        Place of birth;
+                    </label>
+                    <input type="text" id="pob" class="formtext" style="margin-left: 7%; width: 40%;"/>
+                </div>
+                <div>
+                    <!--This div is for username-->
+                    <label for="con" class="formlabel">
+                        Contact No
+                    </label>
+                    <input type="tel" pattern="[3-9]{3}-[0-9]{2}-[0-9]{8}" placeholder="123-12-12345678" id="con" class="formtext" style="margin-left: 7%; width: 40%;"/>
+                </div>
+                <div>
+                    <!--This div is for username-->
+                    <label for="em" class="formlabel">
+                        Email id
+                    </label>
+                    <input type="email" value="john@example.com" id="em" class="formtext" style="margin-left: 7%; width: 40%;" readonly/>
+                </div>   
+                <div>
+                    <!--This div is for username-->
+                    <fieldset style="width: 50%; margin-left: 25%;">
+                        <legend class="formlabel">
+                           Gender: 
+                        </legend>
+                        <label for="m" class="formlabel">
+                            Male
+                        </label>
+                        <input type="radio" id="m" value="male" name="Gender"/>
+                        <label for="f" class="formlabel">
+                            Female
+                        </label>
+                        <input type="radio" id="f" value="Female" name="Gender"/>   
+                    </fieldset>
+                    <div>
+                        <!--This div is for username-->
+                        <label for="em" class="formlabel">
+                                Hidden input
+                        </label>
+                        <input type="hidden" value="john@example.com" id="em" class="formtext" style="margin-left: 7%; width: 40%;" readonly/>
+                    </div> 
+                </div> 
+                <div>
+                    <!--This div is for username-->
+                    <label for="dob" class="formlabel">
+                        Language;
+                    </label>
+                    <select style="margin-left: 11%; width: 30%; margin-right: 12%;">
+                        <option>Mandarin Chinese</option>
+                        <option>Spanish</option>
+                        <option>English</option>
+                        <option>Hindi</option>
+                        <option>Portuguese</option>
+                        <option>Bengali</option>
+                        <option>Russian</option>
+                        <option>Japanese</option>
+                        <option>Yue Chinese</option>
+                        <option>Vietnamese</option>
+                    </select>
+                </div> 
+                <div>
+                    <label for="Identification" class="formlabel">
+                        Identification:
+                    </label>
+                    <input type="text" id="Identification" class="formtext" style="width: 40%; margin-left: 8%;" />
+                </div>
+                <div>
+                    <label for="height" class="formlabel">
+                        Height (in cms):
+                    </label>
+                    <input type="range" id="height" class="formtext" style="width: 40%; margin-left: 8%;" name="height" min="0" max="180"/>
+                </div>
+                <div>
+                    <label for="uplaod" class="formlabel">
+                        Uplaod documents
+                    </label>
+                    <input type="file" id="uplaod" class="formtext" style="width: 40%; margin-left: 8%;" />
+                </div>
+                <div>
+                    <fieldset>
+                        <input type="checkbox" id="uplaod" class="formtext" style="width: 10%; margin-left: 1%;" value="art"/>
+                    <label id="art">
+                        Art
+                    </label>
+                    <input type="checkbox" id="uplaod" class="formtext" style="width: 10%; margin-left: 1%;" value="dance" />
+                    <label id="art">
+                        Dance
+                    </label>
+                    <input type="checkbox" id="uplaod" class="formtext" style="width: 10%; margin-left: 1%;" value="painting" />
+                    <label id="art">
+                        Painting
+                    </label>
+                    <input type="checkbox" id="uplaod" class="formtext" style="width: 10%; margin-left: 1%;" value="photography" />
+                    <label id="art">
+                        Photography
+                    </label>
+                    <legend>
+                        Hobbies
+                    </legend>
+                    </fieldset>
+                </div>
+                <div>
+                    <input type="submit" id="btnsubmit" style="width: 20%; margin-left: 8%;" class="btn"  /> 
+                    <input type="reset" id="btnreset" style="width: 20%; margin-left: 8%;" class="btn" disabled/> 
+                </div>
+                <div>
+                    <input type="image" src="./images/witch1.png" width="50px" height="50px"/>
+                </div>
+            </form>
+        </section>
+    </body>
+</html>
